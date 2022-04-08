@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body,html{
+    margin: 0;
+      font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    display: flex;
+    background-color: rgb(0, 0, 0);
+    padding: 8px 32px;
+}
+
+li  > a, li > a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+.content-container {
+    padding: 16px;
+}
+
+.links{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+ul{
+    padding: 8px;
+    margin: 0;
+}
+
+.links > li {
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 120px;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.image-container {
+    width: 64px;
+}
+
+nav img {
+    max-width: 100%;
+    height: auto;
+    margin: 8px;
+}
+
+nav img:hover{
+    cursor: pointer;
+}
+
+.burger {
+    display: none;
+ }
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    margin: 3px;
+    background-color: white;
+    transition: 0.5s ease;
+}
+
+.mobile-nav{
+    display: none;
+    padding: 16px 0px;
+}
+
+.mobile-nav a,a:visited{
+    text-decoration: none;
+    display: block;
+    padding: 16px;
+    color: black;
+    font-weight: 300;
+}
+
+.mobile-nav a:hover {
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.band{
+    font-family: 'Oswald';
+    background-color: black;
+    color: white;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    line-height: 1.2;
+}
+
+.band h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.resume-content {
+    display: flex;
+    padding: 8px;
+}
+
+.pfp-container{
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.pfp-container > img {
+    width: 100%;
+    max-height: 380px;
+}
+
+.about {
+    flex: 1;
+}
+
+.aboutme {
+    font-size: 20px;
+}
+
+.toggle .line-1 {
+    transform: rotate(-45deg)  translate(-8px,5px);
+}
+
+.toggle .line-2 {
+    opacity: 0;;
+}
+
+.toggle .line-3 {
+    transform: rotate(45deg) translate(-8px,-5px);
+}
+
+@media screen and (max-width:850px) {
+    .resume-content{
+         flex-direction: column;
+    }
+    .links {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .links {
+        display: none;
+    }
+    .burger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        align-items: flex-end;
+    }
+    .content-container {
+        padding: 16px;
+    }
+   
+}
