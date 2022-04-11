@@ -148,7 +148,7 @@ nav img:hover{
     padding: 16px;
     width: 1100px;
     border-radius: 16px;
-    box-shadow: 0px 5px 10px rgb(114, 113, 113);;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
     bottom: -100px;
     margin: 0 auto;
     margin-bottom: 130px;
@@ -329,7 +329,7 @@ nav img:hover{
 
 .card-image-container > img {
     width: 100px;
-    height: 120px;
+    height: 100px;
 }
 
 .card-desc {
@@ -338,7 +338,6 @@ nav img:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 1px solid black;
 }
 
 .langue {
