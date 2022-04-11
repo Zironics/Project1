@@ -9,6 +9,6 @@ burger.addEventListener('click',function(e){
 
 $(document).ready(function(){
     $(burger).click(function(){
-      $(mobilenav).slideToggle("slow");
+      $(mobilenav).slideToggle("500ms");
     });
 });
