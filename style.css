@@ -479,6 +479,10 @@ li img {
     .photos {
         padding: 8px;
     }
+
+    .citation {
+        font-size: 24px;
+    }
     
     .gallery {
         flex-direction: column;
