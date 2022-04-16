@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+
+/* styling general */
+
 body,html{
     margin: 0;
       font-family: 'Montserrat', sans-serif;
@@ -154,6 +157,8 @@ nav img:hover{
     font-weight: 700;
 }
 
+/* resume */
+
 .resume-content {
     background-image: linear-gradient(to bottom,black,rgb(48, 47, 47));
 }
@@ -236,6 +241,20 @@ nav img:hover{
     max-width: 520px;
 }
 
+.socials a {
+    margin: 3px 8px;
+}
+
+.socials img {
+   width: 30px;
+}
+
+.socials img:hover {
+    animation: rotate 1s infinite;
+}
+
+/* comptence */
+
 .grid-container {
     display: grid;
     width: 70%;
@@ -274,7 +293,6 @@ nav img:hover{
     margin-bottom: 8px;
 
 }
-
 
 .baro-metre {
     margin-bottom: 25px;
@@ -337,6 +355,8 @@ nav img:hover{
     justify-content: center;
 }
 
+/* Langues */
+
 .langue {
     text-align: center;
 }
@@ -346,6 +366,9 @@ nav img:hover{
        line-height: 40px;
        font-size: 30px;
 }
+
+
+/* divers */
 
 .divers-content h2 {
     margin: 0;
@@ -415,6 +438,7 @@ li img {
     align-self: flex-end;
  }
 
+ /* centre d'interet */
 
  .intrest-container > div {
     padding: 16px 36px;
@@ -451,19 +475,7 @@ li img {
     margin: 0px 8px;
 }
 
-.socials a {
-    margin: 3px 8px;
-}
-
-.socials img {
-   width: 30px;
-}
-
-.socials img:hover {
-    animation: rotate 1s infinite;
-}
-
-
+/* media */
 
 @media screen and (max-width:1200px) {
     .pfp-container {
@@ -547,6 +559,9 @@ li img {
         height: fit-content;
     }
 }
+
+
+/* animation */
 
 @keyframes progressBar {
     0% { width: 0;}
