@@ -482,6 +482,7 @@ li img {
     
     .gallery {
         flex-direction: column;
+        gap: 8px;
     }
 
     .gallery li {
